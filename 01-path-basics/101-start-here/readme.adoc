@@ -57,7 +57,7 @@ image:cloud9-development-environment-welcome.png[]
 
 === Build Script
 
-Once your Cloud9 is ready, download the build script and install in your IDE. This will prepare your IDE for running tutorials in this workshop. The build script installs the following:
+Once your Cloud9 is ready, download the build script and install it in your IDE. This will prepare your IDE for running tutorials in this workshop. The build script installs the following:
 
 - jq
 - kubectl _(the Kubernetes CLI, which we'll cover in great detail later in the workshop)_
@@ -66,7 +66,7 @@ Once your Cloud9 is ready, download the build script and install in your IDE. Th
 - creates an SSH key
 - clone the workshop repository into Cloud9
 
-To install the script, run this command in the "bash" terminal tab of the Cloud9 IDE:
+To download and install the script, run this command in the "bash" terminal tab of the Cloud9 IDE:
 
     aws s3 cp s3://aws-kubernetes-artifacts/lab-ide-build.sh . && \
     chmod +x lab-ide-build.sh && \
@@ -122,7 +122,7 @@ Wait until all resources are deleted by kops
 
 ==== Delete Cloud9 Envionment
 
-Go to CloudFormation console, right click template with name 'k8s-workshop' and select 'Delete Stack'
+Go to CloudFormation console, right-click template with name 'k8s-workshop' and select 'Delete Stack'
 
 This should delete all the resources associated with this workshop
 
